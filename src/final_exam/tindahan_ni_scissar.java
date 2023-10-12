@@ -71,10 +71,12 @@ public class tindahan_ni_scissar {
            sulod.addProduct("tinapa", 20);
             sulod.addProduct("Bear brand", 20);
         while(true){
-            System.out.println("Tindahan Ni Manong Scissar!!!!!!");
+            
+            System.out.println("**********Tindahan Ni Manong Scissar!!!!!!**********");
         System.out.println("1. Add product");
         System.out.println("2. Sell product");
         System.out.println("3. Display inventory");
+            System.out.println("4. Never Mind!!");
 
       
         int choice = scanner.nextInt();
@@ -82,24 +84,25 @@ public class tindahan_ni_scissar {
         switch (choice) {
             case 1:
                
-                System.out.println("Enter the name of the product to add: ");
+                System.out.println("Unsa imo i dungag???!: ");
                 String productName = scanner.next();
-                System.out.println("Enter the quantity of the product to add: ");
+                System.out.println("Pila kabouk?!!!: ");
                 int quantity = scanner.nextInt();
                 sulod.addProduct(productName, quantity);
                 break;
             case 2:             
-                System.out.println("Enter the name of the product to sell: ");
+                System.out.println("Onsa imo!!??: ");
                 productName = scanner.next();
-                System.out.println("Enter the quantity of the product to sell: ");
+                System.out.println("pila man?!!!: ");
                 quantity = scanner.nextInt();
                 sulod.sellProduct(productName, quantity);
                 break;
             case 3:            
                 sulod.displayInventory();
                 break;
-            default:
-                System.out.println("Invalid choice.");
+            case 4:
+                System.out.println("K!");
+                break;
         }
     }
 }
